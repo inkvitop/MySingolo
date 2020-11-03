@@ -1,0 +1,228 @@
+@import "fonts";
+@import "slider";
+
+
+$mainBgColor: rgb(45, 48, 58);
+$mainBgColorBorder: rgb(50, 55, 70);
+$redColor: rgb(255, 108, 100);
+
+$navTextColor: rgb(255, 255, 255);
+$darkTextColor: rgb(102, 109, 137);
+
+$darkTextColorHover: rgb(142, 151, 189);
+
+
+html {
+      scroll-behavior: smooth;
+}
+body {
+      display: flex;
+      justify-content: center;
+      box-sizing: border-box;
+}
+
+//                                   СТИЛИ HEADER
+.shadow {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 0%;
+      z-index: 11;
+      background-color: rgba(45, 48, 58, 0);
+      transition: background-color 0.4s linear;
+}
+header {
+      position: fixed;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      border-bottom: 6px solid $mainBgColorBorder;
+      background-color: $mainBgColor;
+      height: 89px;
+      width: 100%;
+      z-index: 10;
+
+      section {
+            width: 1020px;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+      }
+}
+.burger {
+      display: none;
+}
+.header-article {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 40px 0px 40px;
+
+      h1 {
+            font-family: lato;
+            font-weight: bold;
+            font-size: 25px;
+            line-height: 30px;
+            letter-spacing: -0.03em;
+            color: $navTextColor;
+
+            span {
+                  color: $redColor;
+                  margin-left: 1px;
+            }
+      }
+
+      nav {
+            display: flex;
+            flex-direction: row;
+            width: 375px;
+            justify-content: space-between;
+      }
+}
+.nav__separator {
+      height: 2px;
+      width: 2px;
+      border-radius: 50%;
+      background-color: $navTextColor;
+      margin-top: 6px;
+}
+.nav-buttons {
+      font-family: lato;
+      font-weight: bold;
+      color: $navTextColor;
+      text-decoration: none;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: -0.035em;
+}
+.nav-buttons:hover {
+      color:$redColor
+}
+.nav-buttons_active {
+      color:$redColor
+}
+.disabled {
+      pointer-events: none;
+}
+
+
+                                    // MAIN
+main {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+}
+.main-slider {
+      background-color: $redColor;
+      border-bottom: 6px solid rgb(234, 103, 107);
+      display: flex;
+      justify-content: center;
+      margin-top: 89px;
+}
+.main-slider__article {
+      width: 1020px;
+      height: 595px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+                                          // SERVICES
+.main-services {
+      width: 100%;
+      background-color:  rgb(242, 242, 242);
+      display: flex;
+      justify-content: center;
+      border-bottom: 6px solid white;
+}
+.main-services__article {
+      width: 1020px;
+      height: 494px;
+      padding: 59px 40px 46px 40px;
+      box-sizing: border-box;
+}
+.main-services__article__text-box {
+      font-family: lato;
+
+      h2 {
+            color: $darkTextColor;
+            font-weight: 900;
+            font-size: 30px;
+            line-height: 36px;
+            margin-bottom: 18px;
+      }
+
+      p {
+            color: $darkTextColor;
+            font-weight: lighter;
+            font-size: 18px;
+            line-height: 30px;
+      }
+}
+.services-blocks {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 45px;
+}
+
+.services-blocks__block {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      // width: 300px;
+      margin-bottom: 35px;
+}
+
+.services-blocks__block__image {
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      border: 2px solid $darkTextColor;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      margin-right: 20px;
+      
+      img {
+            align-self: center;
+      }
+}
+.services-blocks__block__content {
+      width: 220px;
+
+      h3 {
+            font-family: lato;
+            color: $darkTextColor;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 18px;
+            margin-bottom: 7px;
+      }
+      p {
+            font-family: lato;
+            font-weight: normal;
+            font-style: normal;
+            color: $darkTextColor;
+            font-weight: 550;
+            font-size: 12px;
+            line-height: 22px;
+      }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@import "adaptive";
