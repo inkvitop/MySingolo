@@ -57,6 +57,31 @@
             padding: 59px 40px 46px 40px;
             box-sizing: border-box;
       }
+
+
+                                          // PORTFOLIO
+      .main-portfolio__article {
+            width: 768px;
+            height: 1094px;
+            padding: 59px 40px 68px 40px;
+            box-sizing: border-box;
+      }
+      .main-portfolio__article__gallery-block {
+            height: 790px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: space-between;
+            margin-top: 18px;
+            overflow: hidden;
+      
+            img {
+                  margin-bottom: 20px;
+                  height: 183px;
+                  width: 216px;
+            }
+      }
 }
 
 
@@ -276,6 +301,41 @@
             height:1032px;
             padding: 25px 28px 20px 28px;
       }
+
+                                                // PORTFOLIO
+      .main-portfolio {
+            border-bottom: none;
+      }
+      .main-portfolio__article {
+            padding: 42px 30px 42px 30px;
+            box-sizing: border-box;
+            height: 844px;
+            width: 375px;
+      }
+      .main-portfolio__article__gallery-block {
+            height: 554px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: space-between;
+            margin-top: 18px;
+            overflow: hidden;
+      
+            img {
+                  margin-bottom: 14px;
+                  height: 128px;
+                  width: 151px;
+            }
+      }
+
+                                                // FOOTER
+      .footer-section {
+            justify-content: center;
+      }
+      .copiraight {
+            display: none;
+      }
 }
 
 
@@ -363,6 +423,60 @@
             
             img {
                   align-self: center;
+            }
+      }
+
+
+                                                // PORTFOLIO
+      .main-portfolio {
+            border-bottom: none;
+      }
+      .main-portfolio__article {
+            padding: 42px 30px 42px 30px;
+            box-sizing: border-box;
+            height: 724px;
+            width: 320px;
+      }
+      .main-portfolio__article__gallery-block {
+            height: 460px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: space-between;
+            margin-top: 18px;
+            overflow: hidden;
+      
+            img {
+                  margin-bottom: 14px;
+                  height: 102px;
+                  width: 120px;
+            }
+      }
+      .main-portfolio__article__buttons-block {
+            width: 260px;
+            height: 22px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-family: Lato;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 12px;
+            margin-top: 20px;
+      
+            .buttons-block__button__all {
+                  width: 28px;
+            }
+            .buttons-block__button__webd {
+                  width: 79px;
+            }
+            .buttons-block__button__graphicd {
+                  width: 95px;
+            }
+            .buttons-block__button__artwork {
+                  width: 58px;
             }
       }
 }
