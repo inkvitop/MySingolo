@@ -4,12 +4,14 @@
 
 $mainBgColor: rgb(45, 48, 58);
 $mainBgColorBorder: rgb(50, 55, 70);
-$redColor: rgb(255, 108, 100);
+$mainColor: rgb(255, 108, 100);
 
 $navTextColor: rgb(255, 255, 255);
 $darkTextColor: rgb(102, 109, 137);
 
 $darkTextColorHover: rgb(142, 151, 189);
+
+$footerHeight: 76px;
 
 
 html {
@@ -33,7 +35,7 @@ body {
       background-color: rgba(45, 48, 58, 0);
       transition: background-color 0.4s linear;
 }
-header {
+.header {
       position: fixed;
       display: flex;
       flex-direction: row;
@@ -46,7 +48,7 @@ header {
       top: 0;
       left: 0;
 
-      section {
+      .header__section {
             width: 1020px;
             height: 100%;
             display: flex;
@@ -64,7 +66,7 @@ header {
       align-items: center;
       padding: 0px 40px 0px 40px;
 
-      h1 {
+      .header-logo {
             font-family: lato;
             font-weight: bold;
             font-size: 25px;
@@ -72,13 +74,13 @@ header {
             letter-spacing: -0.03em;
             color: $navTextColor;
 
-            span {
-                  color: $redColor;
+            &-sinbol {
+                  color: $mainColor;
                   margin-left: 1px;
             }
       }
 
-      nav {
+      &-navigation {
             display: flex;
             flex-direction: row;
             width: 235px;
@@ -102,10 +104,10 @@ header {
       letter-spacing: -0.035em;
 }
 .nav-buttons:hover {
-      color:$redColor
+      color:$mainColor
 }
 // .nav-buttons_active {
-//       color:$redColor
+//       color:$mainColor
 // }
 .disabled {
       pointer-events: none;
@@ -113,14 +115,14 @@ header {
 
 
                                     // MAIN
-main {
+.main {
       display: flex;
       justify-content: center;
       flex-direction: column;
       width: 100%;
 }
 .main-slider {
-      background-color: $redColor;
+      background-color: $mainColor;
       border-bottom: 6px solid rgb(234, 103, 107);
       display: flex;
       justify-content: center;
@@ -151,7 +153,7 @@ main {
 .main-services__article__text-box {
       font-family: lato;
 
-      h2 {
+      &-h2 {
             color: $darkTextColor;
             font-weight: 900;
             font-size: 30px;
@@ -159,7 +161,7 @@ main {
             margin-bottom: 18px;
       }
 
-      p {
+      &-p {
             color: $darkTextColor;
             font-weight: lighter;
             font-size: 18px;
@@ -191,14 +193,14 @@ main {
       align-content: center;
       margin-right: 20px;
       
-      img {
+      &-img {
             align-self: center;
       }
 }
 .services-blocks__block__content {
       width: 220px;
 
-      h3 {
+      &-h3 {
             font-family: lato;
             color: $darkTextColor;
             font-weight: bold;
@@ -206,7 +208,7 @@ main {
             line-height: 18px;
             margin-bottom: 7px;
       }
-      p {
+      &-p {
             font-family: lato;
             font-weight: normal;
             font-style: normal;
@@ -233,14 +235,14 @@ main {
 .main-portfolio__article__text-block {
       font-family: lato;
 
-      h2 {
+      &-h2 {
             color: $darkTextColor;
             font-weight: 900;
             font-size: 30px;
             line-height: 36px;
             margin-bottom: 18px;
       }
-      p {
+      &-p {
             color: $darkTextColor;
             font-weight: lighter;
             font-size: 18px;
@@ -283,16 +285,20 @@ main {
       margin-top: 20px;
 
       .buttons-block__button__all {
-            width: 28px;
+            // width: 28px;
+            display: inline-block;
       }
       .buttons-block__button__webd {
-            width: 79px;
+            // width: 79px;
+            display: inline-block;
       }
       .buttons-block__button__graphicd {
-            width: 95px;
+            // width: 95px;
+            display: inline-block;
       }
       .buttons-block__button__artwork {
-            width: 58px;
+            // width: 58px;
+            display: inline-block;
       }
 }
 
@@ -306,14 +312,14 @@ main {
       margin-top: 18px;
       overflow: hidden;
 
-      img {
+      &-img {
             margin-bottom: 20px;
       }
 }
 
                                           // FOOTER
-footer {
-      height: 76px;
+.footer {
+      height: $footerHeight;
       background-color: $mainBgColor;
       display: flex;
       justify-content: center;
@@ -351,7 +357,7 @@ footer {
       justify-content: center;
       align-content: center;
       
-      img {
+      &-img {
             align-self: center;
       }
 }
@@ -365,7 +371,7 @@ footer {
 
                                                 //  CONDITIONS
 .active {
-      color:$redColor
+      color:$mainColor
 }
 
 

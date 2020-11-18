@@ -4,6 +4,6 @@ $(document).ready(function(){
             $('.burger').toggleClass('burger_active');
             $('.shadow').toggleClass('overlay');
             $('body').toggleClass('lock');
-            $('.burger__head h2').toggleClass('burger__logo_hide');
+            $('.burger__icon-h2').toggleClass('burger__logo_hide');
       });
 });

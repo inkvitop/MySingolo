@@ -6,28 +6,22 @@
       max-width: 100%;
       margin-left: auto;
       margin-right: auto;
-    }
-    .slider a:hover {
-      box-shadow:0px 0px 9px 10px #FFFFFF;
-      background-color: #FFFFFF;
-      
-    }
-    
+
     /* стили для обёртки, в которой заключены слайды */
-    .slider__wrapper {
+    &__wrapper {
       position: relative;
       overflow: hidden;
       height: 595px;
     }
-    
+
     /* стили для контейнера слайдов */
-    .slider__items {
+    &__items {
       display: flex;
       transition: transform 0.6s ease;
     }
-    
+
     /* стили для слайдов */
-    .slider__item {
+    &__item {
       flex: 0 0 100%;
       max-width: 100%;
 
@@ -35,10 +29,9 @@
         max-width: 100%;
       }
     }
-    
-    
+
     /* стили для кнопок "вперед" и "назад" */
-    .slider__control {
+    &__control {
       position: absolute;
       top: 50%;
       display: flex;
@@ -46,6 +39,45 @@
       justify-content: center;
       text-align: center;
     }
+
+    &__control_prev {
+      left: 40px;
+    } 
+
+    &__control_next {
+      right: 40px;
+    }
+
+    &__control::before {
+      content: "";
+      display: inline-block;
+      width: 16px;
+      height: 27px;
+      background: transparent no-repeat center center;
+      background-size: 100% 100%;
+    }
+
+    &__control_prev::before {
+      background-image: url("/images/arrow-left.png");
+    }
+    &__control_next::before {
+      background-image: url("/images/arrow-right.png");
+    }
+}
+    .slider a:hover {
+      box-shadow:0px 0px 9px 10px #FFFFFF;
+      background-color: #FFFFFF;
+      
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     // .slider__control:hover,
     // .slider__control:focus {
@@ -55,33 +87,17 @@
     //   opacity: 0.9;
     // }
     
-    .slider__control_prev {
-      left: 40px;
-    } 
+    
     // .slider__control_prev:hover {
     //   background-image: url("/images/arrow-left-hov.png");
     // } 
     
 
-    .slider__control_next {
-      right: 40px;
-    }
     
-    .slider__control::before {
-      content: "";
-      display: inline-block;
-      width: 16px;
-      height: 27px;
-      background: transparent no-repeat center center;
-      background-size: 100% 100%;
-    }
     
-    .slider__control_prev::before {
-      background-image: url("/images/arrow-left.png");
-    }
-    .slider__control_next::before {
-      background-image: url("/images/arrow-right.png");
-    }
+    
+    
+    
     
     /* стили для индикаторов */
     // .slider__indicators {
@@ -117,14 +133,14 @@
     // }
 
 
-    @media all and (max-width: 1020px){
+    // @media all and (max-width: 1020px){
         
-    }
+    // }
 
-    @media all and (max-width: 768px){
+    // @media all and (max-width: 768px){
 
-    }
+    // }
 
-    @media all and (max-width: 374px){
+    // @media all and (max-width: 374px){
 
-    }
+    // }
