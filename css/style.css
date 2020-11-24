@@ -68,7 +68,7 @@
   background-size: 100% 100%;
 }
 .slider__control_prev::before {
-  background-image: url("images/arrow-left.png");
+  background-image: url("https://raw.githubusercontent.com/inkvitop/MySingolo/SINGOLO-upd%233/images/arrow-left.png");
 }
 .slider__control_next::before {
   background-image: url("images/arrow-right.png");
