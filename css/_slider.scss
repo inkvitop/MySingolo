@@ -58,10 +58,10 @@
     }
 
     &__control_prev::before {
-      background-image: url("/images/arrow-left.png");
+      background-image: url("images/arrow-left.png");
     }
     &__control_next::before {
-      background-image: url("/images/arrow-right.png");
+      background-image: url("images/arrow-right.png");
     }
 }
     .slider a:hover {
